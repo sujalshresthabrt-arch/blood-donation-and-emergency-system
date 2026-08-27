@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Drop | Blood Donor & Emergency Request</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <div class="logo-icon">+</div>
+        <div>
+            <h2>Life Drop To Save Humans </h2>
+            <span>Blood Donor System</span>
+        </div>
+    </div>
+
+    <nav>
+        <a class="home" href="#home">Home</a>
+        <a class="donors" href="#donors">Find Donor</a>
+        <a class="request" href="#request">Emergency</a>
+        <a class="about" href="#about">About</a>
+    </nav>
+
+    <a class="admin-btn" href="admin/login.php2">Admin</a>
+</header>
+
+
+<main>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                <span></span>
+                EVERY BLOOD DROP MATTERS 
+            </div>
+
+            <h1>
+                One Donation.
+                <br>
+                <strong>One Life.</strong>
+            </h1>
+
+            <p>
+                Connecting blood donors with people who need help
+                during critical moments. Your small act can make
+                someone's tomorrow possible .
+            </p>
+
+            <div class="hero-buttons">
+                <a href="donor/register.php" class="primary-btn">
+                    Become a Donor
+                    <span>→</span>
+                </a>
+
+                <a href="request/emergency.php" class="secondary-btn">
+                    Emergency Request
+                </a>
+            </div>
+
+            <div class="trust">
+                <div class="avatars">
+                    <span>R</span>
+                    <span>S</span>
+                    <span>A</span>
+                    <span>+</span>
+                </div>
+
+                <div>
+                    <strong>Every donor counts</strong>
+                    <p>Be someone's reason to smile today.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="blood-drop">
+                <div class="drop-shape">+</div>
+            </div>
+
+            <div class="card-content">
+                <span class="urgent">● LIVE SUPPORT</span>
+
+                <h3>Need Blood<br>Urgently?</h3>
+
+                <p>
+                    Send an emergency request and connect
+                    with available donors near you.
+                </p>
+
+                <a href="request/emergency.php">
+                    Request Blood <span>→</span>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="stats">
+
+        <div class="stat">
+            <h2>8</h2>
+            <p>Blood Groups</p>
+        </div>
+
+        <div class="stat">
+            <h2>24/7</h2>
+            <p>Emergency Support</p>
+        </div>
+
+        <div class="stat">
+            <h2>100%</h2>
+            <p>Community Driven</p>
+        </div>
+
+        <div class="stat">
+            <h2>1</h2>
+            <p>Goal — To Save Lives</p>
+        </div>
+
+    </section>
+
+
+    <section class="blood-section" id="donors">
+
+        <div class="section-heading">
+            <div>
+                <span class="label">QUICK SEARCH</span>
+                <h2>Find a "Blood Donor" immediately  </h2>
+            </div>
+
+            <p>
+                Select a blood group to find registered donors
+                who may be able to help or willing to help more.
+            </p>
+        </div>
+
+
+        <div class="blood-groups">
+
+            <a href="donor/search.php?group=A+" class="blood-card">
+                <span>A+</span>
+                <small>Available donors</small>
+            </a>
+
+            <a href="donor/search.php?group=A-" class="blood-card">
+                <span>A−</span>
+                <small>Available donors</small>
+            </a>
+
+            <a href="donor/search.php?group=B+" class="blood-card">
+                <span>B+</span>
+                <small>Available donors</small>
+            </a>
+
+            <a href="donor/search.php?group=B-" class="blood-card">
+                <span>B−</span>
+                <small>Available donors</small>
+            </a>
+
+            <a href="donor/search.php?group=AB+" class="blood-card">
+                <span>AB+</span>
+                <small>Available donors</small>
+            </a>
+
+            <a href="donor/search.php?group=AB-" class="blood-card">
+                <span>AB−</span>
+                <small>Available donors</small>
+            </a>
+
+            <a href="donor/search.php?group=O+" class="blood-card">
+                <span>O+</span>
+                <small>Available donors</small>
+            </a>
+
+            <a href="donor/search.php?group=O-" class="blood-card">
+                <span>O−</span>
+                <small>Available donors</small>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="emergency" id="request">
+
+        <div class="emergency-icon">+</div>
+
+        <div>
+            <span>IN AN EMERGENCY?</span>
+            <h2>Someone needs blood right now.</h2>
+            <p>
+                Don't wait. Create an emergency request and
+                let registered donors know that someone needs help or willing to help. 
+            </p>
+        </div>
+
+        <a href="request/emergency.php" class="emergency-btn">
+            Create Request's→
+        </a>
+
+    </section>
+
+
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <div class="circle">
+                <span>♥</span>
+            </div>
+        </div>
+
+        <div class="about-content">
+
+            <span class="label">ABOUT LIFEDROP</span>
+
+            <h2>Technology that connects<br>people when it matters.</h2>
+
+            <p>
+                LifeDrop is a blood donor and emergency request
+                management system designed to make finding blood
+                donors easier and faster.
+            </p>
+
+            <div class="features">
+
+                <div>
+                    <strong>01</strong>
+                    <span>Register as a donor</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Search by blood group</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Send emergency requests</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-logo">
+        <div class="logo-icon">+</div>
+        <div>
+            <h3>LifeDrop</h3>
+            <p>Every drop can save a life.</p>
+        </div>
+    </div>
+
+    <p class="copyright">
+        © 2026 LifeDrop. Blood Donor & Emergency Request System All rights reserved. 
+    </p>
+
+</footer>
+
+</body>
+</html>
