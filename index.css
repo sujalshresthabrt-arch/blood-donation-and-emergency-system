@@ -21,7 +21,7 @@ a {
     color: inherit;
 }
 
-/* HEADER */
+
 
 .header {
     height: 82px;
@@ -64,8 +64,8 @@ a {
 }
 
 .logo span {
-    font-size: 11px;
-    color: #8a7777;
+    font-size: 12px;
+    color: #5f5050;
     letter-spacing: 1.2px;
 }
 
@@ -78,7 +78,7 @@ nav {
 nav a {
     font-size: 14px;
     font-weight: 600;
-    color: #625858;
+    color: #4b4141;
     transition: 0.3s ease;
 }
 
@@ -101,7 +101,7 @@ nav a:hover {
     color: white;
 }
 
-/* HERO */
+
 
 .hero {
     min-height: 650px;
@@ -124,7 +124,7 @@ nav a:hover {
     align-items: center;
     gap: 10px;
     color: #b91c32;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -152,7 +152,7 @@ nav a:hover {
 .hero-content > p {
     max-width: 560px;
     font-size: 17px;
-    color: #756868;
+    color: #514747;
     line-height: 1.8;
     margin-bottom: 32px;
 }
@@ -237,10 +237,10 @@ nav a:hover {
 
 .trust p {
     font-size: 12px;
-    color: #887979;
+    color: #5d5050;
 }
 
-/* HERO CARD */
+
 
 .hero-card {
     width: 370px;
@@ -338,7 +338,7 @@ nav a:hover {
     font-size: 18px;
 }
 
-/* STATS */
+
 
 .stats {
     padding: 45px 7%;
@@ -366,11 +366,11 @@ nav a:hover {
 }
 
 .stat p {
-    font-size: 13px;
-    color: #817474;
+    font-size: 14px;
+    color: #5b4f4f;
 }
 
-/* BLOOD SECTION */
+
 
 .blood-section {
     padding: 100px 7%;
@@ -404,7 +404,7 @@ nav a:hover {
 
 .section-heading > p {
     max-width: 420px;
-    color: #817474;
+    color: #5b4f4f;
     font-size: 14px;
     line-height: 1.8;
 }
@@ -459,12 +459,12 @@ nav a:hover {
 }
 
 .blood-card small {
-    color: #8b7c7c;
-    font-size: 12px;
+    color: #5d5050;
+    font-size: 13px;
     margin-top: 5px;
 }
 
-/* EMERGENCY */
+
 
 .emergency {
     margin: 30px 7% 100px;
@@ -496,7 +496,7 @@ nav a:hover {
 }
 
 .emergency > div:nth-child(2) > span {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
     opacity: 0.8;
@@ -530,7 +530,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* ABOUT */
+
 
 .about {
     padding: 100px 7%;
@@ -577,7 +577,7 @@ nav a:hover {
 
 .about-content > p {
     max-width: 550px;
-    color: #766a6a;
+    color: #514747;
     font-size: 15px;
     line-height: 1.9;
     margin-bottom: 35px;
@@ -607,7 +607,6 @@ nav a:hover {
     font-weight: 600;
 }
 
-/* FOOTER */
 
 .footer {
     padding: 55px 7% 30px;
@@ -636,8 +635,8 @@ nav a:hover {
 }
 
 .footer-logo p {
-    font-size: 12px;
-    color: #a99c9c;
+    font-size: 13px;
+    color: #d5caca;
 }
 
 .footer-links {
@@ -648,7 +647,7 @@ nav a:hover {
 }
 
 .footer-links a {
-    color: #c7bbbb;
+    color: #e0d5d5;
     font-size: 13px;
     transition: 0.3s ease;
 }
@@ -661,12 +660,12 @@ nav a:hover {
     grid-column: 1 / -1;
     padding-top: 25px;
     border-top: 1px solid #3b3334;
-    color: #8f8282;
-    font-size: 11px;
+    color: #bdb0b0;
+    font-size: 12px;
     text-align: center;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 1000px) {
     .header {
@@ -880,3 +879,71 @@ nav a:hover {
     }
 
 }
+
+
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #7c1021;
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+nav a,
+.admin-btn,
+.primary-btn,
+.secondary-btn,
+.emergency-btn,
+.card-content a {
+    min-height: 44px;
+}
+
+nav a,
+.admin-btn,
+.primary-btn,
+.secondary-btn,
+.emergency-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-btn:hover,
+.primary-btn:focus-visible {
+    background: #8f1226;
+}
+
+.admin-btn:focus-visible {
+    background: #b91c32;
+    color: #ffffff;
+}
+
+.secondary-btn:focus-visible {
+    border-color: #8f1226;
+    color: #8f1226;
+}
+
+.emergency-btn:hover,
+.emergency-btn:focus-visible {
+    background: #ffe4e7;
+    color: #8f1226;
+}
+
+.card-content a:focus-visible {
+    border-bottom-color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+

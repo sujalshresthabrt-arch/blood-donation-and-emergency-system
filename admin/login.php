@@ -1,9 +1,7 @@
 <?php 
-$username = "pramod";
+
+$username = "karan";
 $secondUser = "sujal";
-$password = "1234";
+$password = "2067";
 $secondPassword = "5678";
 ?>
-
- 
-
