@@ -11,8 +11,8 @@ html {
 
 body {
     font-family: "DM Sans", sans-serif;
-    background: #fffafa;
-    color: #252525;
+    background: #faf8f8;
+    color: #1f1b1c;
     line-height: 1.6;
 }
 
@@ -20,6 +20,27 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* Accessibility + refined typography */
+:root {
+    font-size: 16px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+p,
+li {
+    max-width: 70ch;
+}
+
+::selection {
+    background: #b91c32;
+    color: #ffffff;
+}
+
 
 
 
@@ -30,7 +51,7 @@ a {
     align-items: center;
     justify-content: space-between;
     background: #ffffff;
-    border-bottom: 1px solid #f0e4e4;
+    border-bottom: 1px solid #e7dfe0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -60,12 +81,12 @@ a {
     font-family: "Playfair Display", serif;
     font-size: 20px;
     line-height: 1.1;
-    color: #252525;
+    color: #1f1b1c;
 }
 
 .logo span {
-    font-size: 12px;
-    color: #5f5050;
+    font-size: 14px;
+    color: #574b4d;
     letter-spacing: 1.2px;
 }
 
@@ -76,9 +97,9 @@ nav {
 }
 
 nav a {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
-    color: #4b4141;
+    color: #3f3638;
     transition: 0.3s ease;
 }
 
@@ -112,7 +133,7 @@ nav a:hover {
     gap: 80px;
     background:
         radial-gradient(circle at 85% 20%, rgba(185, 28, 50, 0.08), transparent 25%),
-        #fffafa;
+        #faf8f8;
 }
 
 .hero-content {
@@ -152,7 +173,7 @@ nav a:hover {
 .hero-content > p {
     max-width: 560px;
     font-size: 17px;
-    color: #514747;
+    color: #4b4143;
     line-height: 1.8;
     margin-bottom: 32px;
 }
@@ -189,8 +210,8 @@ nav a:hover {
 }
 
 .secondary-btn {
-    border: 1px solid #dfcfd0;
-    color: #493e3e;
+    border: 1px solid #cbbdc0;
+    color: #403739;
     background: white;
 }
 
@@ -217,8 +238,8 @@ nav a:hover {
     margin-left: -7px;
     border: 2px solid white;
     border-radius: 50%;
-    background: #f0d7d9;
-    color: #9e2335;
+    background: #ead0d4;
+    color: #8f1b2d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,8 +257,8 @@ nav a:hover {
 }
 
 .trust p {
-    font-size: 12px;
-    color: #5d5050;
+    font-size: 14px;
+    color: #574b4d;
 }
 
 
@@ -345,14 +366,14 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background: white;
-    border-top: 1px solid #eee2e2;
-    border-bottom: 1px solid #eee2e2;
+    border-top: 1px solid #e6dfe0;
+    border-bottom: 1px solid #e6dfe0;
 }
 
 .stat {
     text-align: center;
     padding: 10px 20px;
-    border-right: 1px solid #eee2e2;
+    border-right: 1px solid #e6dfe0;
 }
 
 .stat:last-child {
@@ -367,14 +388,14 @@ nav a:hover {
 
 .stat p {
     font-size: 14px;
-    color: #5b4f4f;
+    color: #514649;
 }
 
 
 
 .blood-section {
     padding: 100px 7%;
-    background: #fffafa;
+    background: #faf8f8;
 }
 
 .section-heading {
@@ -399,12 +420,12 @@ nav a:hover {
     font-family: "Playfair Display", serif;
     font-size: 40px;
     line-height: 1.2;
-    color: #282020;
+    color: #211b1d;
 }
 
 .section-heading > p {
     max-width: 420px;
-    color: #5b4f4f;
+    color: #514649;
     font-size: 14px;
     line-height: 1.8;
 }
@@ -420,7 +441,7 @@ nav a:hover {
     padding: 25px;
     border-radius: 14px;
     background: white;
-    border: 1px solid #eee0e1;
+    border: 1px solid #e5dcde;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -443,7 +464,7 @@ nav a:hover {
 
 .blood-card:hover {
     transform: translateY(-6px);
-    border-color: #d8aeb3;
+    border-color: #c9959d;
     box-shadow: 0 15px 30px rgba(100, 30, 40, 0.08);
 }
 
@@ -459,7 +480,7 @@ nav a:hover {
 }
 
 .blood-card small {
-    color: #5d5050;
+    color: #574b4d;
     font-size: 13px;
     margin-top: 5px;
 }
@@ -526,14 +547,12 @@ nav a:hover {
 }
 
 .emergency-btn:hover {
-    background: #fff0f1;
+    background: whitesmoke;
     transform: translateY(-2px);
 }
 
-
-
 .about {
-    padding: 100px 7%;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
@@ -577,9 +596,9 @@ nav a:hover {
 
 .about-content > p {
     max-width: 550px;
-    color: #514747;
+    color: #2b2224;
     font-size: 15px;
-    line-height: 1.9;
+    line-height: 2.0;
     margin-bottom: 35px;
 }
 
@@ -594,7 +613,7 @@ nav a:hover {
     align-items: center;
     gap: 20px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #eee2e2;
+    border-bottom: 1px solid #e6dfe0;
 }
 
 .features strong {
@@ -609,8 +628,8 @@ nav a:hover {
 
 
 .footer {
-    padding: 55px 7% 30px;
-    background: #211c1d;
+    padding: 55px 10% 30px;
+    background: #c93712;
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -626,7 +645,7 @@ nav a:hover {
 .footer-logo .logo-icon {
     width: 40px;
     height: 40px;
-    background: #b91c32;
+    background: #f3edee;
 }
 
 .footer-logo h3 {
@@ -636,7 +655,7 @@ nav a:hover {
 
 .footer-logo p {
     font-size: 13px;
-    color: #d5caca;
+    color: #d8cfd0;
 }
 
 .footer-links {
@@ -647,7 +666,7 @@ nav a:hover {
 }
 
 .footer-links a {
-    color: #e0d5d5;
+    color: #ddd4d5;
     font-size: 13px;
     transition: 0.3s ease;
 }
@@ -660,7 +679,7 @@ nav a:hover {
     grid-column: 1 / -1;
     padding-top: 25px;
     border-top: 1px solid #3b3334;
-    color: #bdb0b0;
+    color: #b9afb1;
     font-size: 12px;
     text-align: center;
 }
@@ -781,7 +800,7 @@ nav a:hover {
     }
 
     nav a {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .hero {
@@ -793,7 +812,7 @@ nav a:hover {
     }
 
     .hero-content > p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .hero-buttons {
@@ -818,7 +837,7 @@ nav a:hover {
     }
 
     .stat p {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .blood-section,
